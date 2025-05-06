@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+  }
+  
+  header {
+    background-color: #515863;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .Filters {
+    display: flex;
+    gap: 20px;
+    max-width: 1400px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .sidebar {
+    width: 260px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    height: fit-content;
+  }
+  
+  .sidebar label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 14px;
+  }
+  
+  .sidebar select,
+  .sidebar button {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .sidebar button {
+    background-color: #244171;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .Dashboard {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .Visualization {
+    background-color: white;
+    border-radius: 12px;
+    padding: 12px 16px;
+    border-left: 6px solid #515863;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .Visualization section {
+    flex: 1;
+    width: 80%;
+    max-width: 600px;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .tooltip {
+    position: absolute;
+    background-color: rgba(51, 51, 51, 0.9);
+    color: #fff;
+    font-size: 12px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    pointer-events: none;
+    z-index: 999;
+    display: none;
+  }
+  
+  .reset-genre {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #6b7280;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 900px) {
+    .Filters {
+      flex-direction: column;
+    }
+    .sidebar {
+      width: 100%;
+    }
+  }
+  

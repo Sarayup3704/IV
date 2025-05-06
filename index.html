@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Film Dataset Visualization</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>🎬 Film Dataset Visualization</h1>
+  </header>
+
+  <div class="Filters">
+    <aside class="sidebar">
+      <h2>🔍 Filters</h2>
+      <label for="subject-filter">Genre</label>
+      <select id="subject-filter" class="filter"></select>
+
+      <label for="director-filter">Director</label>
+      <select id="director-filter" class="filter"></select>
+
+      <label for="award-filter">Awards</label>
+      <select id="award-filter" class="filter"></select>
+
+      <button id="reset-btn">Reset Filters</button>
+    </aside>
+
+    <div class="Dashboard">
+      <div class="Visualization">
+        <h3 id="label-popularity">📊 Average Popularity by Director</h3>
+        <p>Bullet chart comparing directors based on film popularity</p>
+        <section id="bar-chart"></section>
+      </div>
+
+      <div class="Visualization">
+        <h3 id="label-scatter">📈 Film Length vs Popularity</h3>
+        <p>Scatter plot to explore trends between film length and popularity</p>
+        <section id="scatter-plot"></section>
+      </div>
+
+      <div class="Visualization">
+        <h3 id="label-genre">🧩 Genre Distribution Treemap</h3>
+        <p>Treemap showing number of films by genre</p>
+        <section id="genretreemap"></section>
+        <button id="reset-genre-btn" class="reset-genre">Reset Genre Highlight</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="tooltip" class="tooltip"></div>
+  <script src="script.js"></script>
+</body>
+</html>
